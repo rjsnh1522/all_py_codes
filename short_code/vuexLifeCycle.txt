@@ -1,0 +1,10 @@
+
+
+
+flow
+1. from vue dispatch actions, api calls in action
+2. from action call mutation to access state variables or call api from here and then access data to store in state
+3. from actiont to call mutation use commit("mutation name", data)
+4. In mutation first arg is state and 2nd is data
+5. In action first two args is commit and dispatch and third is data
+6. to access store data getters is used from all over the app

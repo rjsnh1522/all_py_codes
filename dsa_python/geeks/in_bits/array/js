@@ -1,0 +1,12 @@
+    handleScroll(evnt){
+      let src = evnt.srcElement;
+      let offSet = src.offsetHeight;
+      let scrollHeight = src.scrollHeight;
+      let scrollTop    = src.scrollTop;
+      // console.log('offSet, scrollHeight, scrollTop  ')
+      // console.log(offSet, scrollHeight, scrollTop)
+      if(((offSet + scrollTop) > scrollHeight - 80) && this.notRequested){
+        this.notRequested = false
+        
+      }
+    },
