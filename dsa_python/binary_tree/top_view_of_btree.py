@@ -4,9 +4,15 @@ class TreeNode:
         self.val = x
         self.left = None
         self.right = None
+# Definition for a  binary tree node
+class TreeNode:
+    def __init__(self, x=None):
+        self.val = x
+        self.left = None
+        self.right = None
 
 
-def vertical_travers(root):
+def top_view_of_bt(root):
     traversal_table = {}
     queue = []
     hd = 0
@@ -27,7 +33,6 @@ def vertical_travers(root):
     return traversal_table
 
 
-
 bt = TreeNode('a')
 bt.left = TreeNode('b')
 bt.right = TreeNode('c')
@@ -41,4 +46,4 @@ bt.left.left = TreeNode('d')
 bt.left.left.left = TreeNode('l')
 bt.left.right = TreeNode('e')
 
-print(vertical_travers(bt))
+print(top_view_of_bt(bt))
